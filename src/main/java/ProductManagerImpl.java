@@ -20,7 +20,7 @@ public class ProductManagerImpl implements ProductManager{
 
     @Override
     public void addOrder(Order order) {
-
+        this.queueOrder.add(order);
     }
 
     @Override
@@ -36,11 +36,14 @@ public class ProductManagerImpl implements ProductManager{
     @Override
     public void addUser(String s, String name, String surname) {
 
+        User a = new User(s,name,surname);
+        this.users.put(s,a);
     }
 
     @Override
     public void addProduct(String productId, String name, double price) {
-
+        Product p = new Product(productId,name,price);
+        this.listProducts.add(p);
     }
 
     @Override

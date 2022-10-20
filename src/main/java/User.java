@@ -6,6 +6,14 @@ public class User
     String userName;
     String userSurname;
 
+    //Contructor
+    public User(String s, String name, String surname) {
+        this.userId=s;
+        this.userName=name;
+        this.userSurname=surname;
+
+    }
+
     public String getUserId() {
         return userId;
     }

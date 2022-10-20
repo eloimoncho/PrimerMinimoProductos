@@ -6,6 +6,12 @@ public class Product
     String productName;
     double productPrice;
 
+    public Product(String productId, String name, double price) {
+        this.productId=productId;
+        this.productName=name;
+        this.productPrice=price;
+    }
+
     public String getProductId() {
         return productId;
     }
